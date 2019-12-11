@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,300,400,700&display=swap&subset=chinese-simplified"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,300,400,700&display=swap&subset=chinese-simplified");
+
+      .firstbox {
+        border: solid white 2px;
+        padding-left: 1em;
+        display: flex;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: flex;
+        height: 100px;
+        margin-top: 10px;
+      }
+
+      body {
+        background-color: black;
+        margin-top: 2em;
+        margin-left: 8em;
+        margin-right: 8em;
+      }
+
+      .biglogo {
+        margin-top: 50px;
+        text-align: left;
+        border-bottom: 1px solid white;
+      }
+
+      h1 {
+        font-style: normal;
+        font-family: "Noto Serif SC", serif;
+        width: 600px;
+        color: white;
+        background-color: black;
+        letter-spacing: 1px;
+      }
+
+      h3 {
+        font-style: normal;
+        font-family: "Noto Serif SC", serif;
+        width: 600px;
+        color: white;
+        background-color: black;
+        letter-spacing: 1px;
+      }
+
+      h4 {
+        font-style: normal;
+        font-family: "Noto Serif SC", serif;
+        color: white;
+        font-weight: 500;
+      }
+
+      spam {
+        font-style: normal;
+        font-family: "Noto Serif SC", serif;
+        color: white;
+        background-color: black;
+        letter-spacing: 2px;
+        font-weight: 100;
+      }
+
+      .logo {
+        text-align: center;
+      }
+
+      p {
+        font-style: bold;
+        font-family: "Noto Serif SC", serif;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .res {
+        width: 200px;
+        height: 800px;
+        flex-grow: 1;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .resonances {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self: center;
+        justify-content: space-around;
+        padding: 50px;
+        height: 800px;
+      }
+      .resonances p {
+        transform: rotate(360deg);
+        transition: transform 0.7s ease-out;
+      }
+
+      .overlay10-1 {
+        background-color: MediumPurple;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay10-1:hover {
+        opacity: 1;
+      }
+
+      .resonance10-1 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5719.JPG?v=1575974584056");
+      }
+
+      .overlay10-2 {
+        background-color: MediumBlue;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay10-2:hover {
+        opacity: 1;
+      }
+
+      .resonance10-2 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5720.JPG?v=1575974852427");
+      }
+
+      .overlay10-3 {
+        background-color: Aqua;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay10-3:hover {
+        opacity: 1;
+      }
+
+      .resonance10-3 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5721.JPG?v=1575975009063");
+      }
+
+      .overlay9-1 {
+        background-color: #E75131;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay9-1:hover {
+        opacity: 1;
+      }
+
+      .resonance9-1 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5722.JPG?v=1575975424255");
+      }
+
+      .overlay9-2 {
+        background-color: #F1AA1C;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay9-2:hover {
+        opacity: 1;
+      }
+
+      .resonance9-2 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5723.JPG?v=1575975417023");
+      }
+
+      .overlay9-3 {
+        background-color: #FCF100;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay9-3:hover {
+        opacity: 1;
+      }
+
+      .resonance9-3 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5724.JPG?v=1575975420264");
+      }
+
+      .overlay8-1 {
+        background-color: #FF8D6B;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay8-1:hover {
+        opacity: 1;
+      }
+
+      .resonance8-1 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5725.JPG?v=1575975812864");
+      }
+
+      .overlay8-2 {
+        background-color: #752F1A;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay8-2:hover {
+        opacity: 1;
+      }
+
+      .resonance8-2 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5726.JPG?v=1575975811313");
+      }
+
+      .overlay8-3 {
+        background-color: #E35301;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay8-3:hover {
+        opacity: 1;
+      }
+
+      .resonance8-3 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5727.JPG?v=1575975810821");
+      }
+
+      .overlay7-1 {
+        background-color: #030A59;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay7-1:hover {
+        opacity: 1;
+      }
+
+      .resonance7-1 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5728.JPG?v=1576037717625");
+      }
+
+      .overlay7-2 {
+        background-color: #035950;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay7-2:hover {
+        opacity: 1;
+      }
+
+      .resonance7-2 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5729.JPG?v=1576037711029");
+      }
+
+      .overlay7-3 {
+        background-color: #593F03;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay7-3:hover {
+        opacity: 1;
+      }
+
+      .resonance7-3 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5730.JPG?v=1576037716798");
+      }
+
+      .overlay6-1 {
+        background-color: #4E6DD8;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay6-1:hover {
+        opacity: 1;
+      }
+
+      .resonance6-1 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5739.JPG?v=1576039871916");
+      }
+
+      .overlay6-2 {
+        background-color: #D84EB0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay6-2:hover {
+        opacity: 1;
+      }
+
+      .resonance6-2 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5740.JPG?v=1576039872327");
+      }
+
+      .overlay6-3 {
+        background-color: #D84E67;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay6-3:hover {
+        opacity: 1;
+      }
+
+      .resonance6-3 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5741.JPG?v=1576039869886");
+      }
+
+      .overlay5-1 {
+        background-color: #FFB325;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay5-1:hover {
+        opacity: 1;
+      }
+
+      .resonance5-1 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5742.JPG?v=1576040861985");
+      }
+
+      .overlay5-2 {
+        background-color: #FF6A75;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay5-2:hover {
+        opacity: 1;
+      }
+
+      .resonance5-2 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5743.JPG?v=1576040862563");
+      }
+
+      .overlay5-3 {
+        background-color: #6AE4FF;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay5-3:hover {
+        opacity: 1;
+      }
+
+      .resonance5-3 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5744.JPG?v=1576040863535");
+      }
+
+      .overlay4-1 {
+        background-color: #16045D;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay4-1:hover {
+        opacity: 1;
+      }
+
+      .resonance4-1 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5745.JPG?v=1576041261304");
+      }
+
+      .overlay4-2 {
+        background-color: #5D0804;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay4-2:hover {
+        opacity: 1;
+      }
+
+      .resonance4-2 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5746.JPG?v=1576041266436");
+      }
+
+      .overlay4-3 {
+        background-color: #2E5D04;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay4-3:hover {
+        opacity: 1;
+      }
+
+      .resonance4-3 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5747.JPG?v=1576041260148");
+      }
+
+      .overlay3-1 {
+        background-color: #5CCC81;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay3-1:hover {
+        opacity: 1;
+      }
+
+      .resonance3-1 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5748.JPG?v=1576041910776");
+      }
+
+      .overlay3-2 {
+        background-color: #901A1A;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay3-2:hover {
+        opacity: 1;
+      }
+
+      .resonance3-2 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5749.JPG?v=1576041910390");
+      }
+
+      .overlay3-3 {
+        background-color: #AAAAAA;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay3-3:hover {
+        opacity: 1;
+      }
+
+      .resonance3-3 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5750.JPG?v=1576041912050");
+      }
+
+      .overlay2-1 {
+        background-color: #484848;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay2-1:hover {
+        opacity: 1;
+      }
+
+      .resonance2-1 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5751.JPG?v=1576042305049");
+      }
+
+      .overlay2-2 {
+        background-color: #C44880;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay2-2:hover {
+        opacity: 1;
+      }
+
+      .resonance2-2 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5752.JPG?v=1576042305547");
+      }
+
+      .overlay2-3 {
+        background-color: #FFE356;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay2-3:hover {
+        opacity: 1;
+      }
+
+      .resonance2-3 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5753.JPG?v=1576042301064");
+      }
+
+      .overlay1-1 {
+        background-color: #00ABD1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay1-1:hover {
+        opacity: 1;
+      }
+
+      .resonance1-1 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5754.JPG?v=1576043353485");
+      }
+
+      .overlay1-2 {
+        background-color: #A56C0E;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay1-2:hover {
+        opacity: 1;
+      }
+
+      .resonance1-2 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5755.JPG?v=1576043356760");
+      }
+
+      .overlay1-3 {
+        background-color: #0E4CA5;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.7s ease-in;
+      }
+
+      .overlay1-3:hover {
+        opacity: 1;
+      }
+
+      .resonance1-3 {
+        background-image: url("https://cdn.glitch.com/046f6b2f-072f-4184-a3f8-bf08560133a8%2FIMG_5756.JPG?v=1576043351845");
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="biglogo">
+      <a href="http://boboradio2016.com">
+        <img
+          width="150px"
+          src="https://cdn.glitch.com/aed6d2fa-78a4-49c8-9c2b-126e3caf00c4%2FLOGO%EF%BC%81.jpg?v=1569374182563"
+        />
+      </a>
+    </div>
+
+    <div class="firstbox">
+      <h1>
+        The Resonance | 碎片体感共振
+      </h1>
+    </div>
+
+    <h3>第十次 #10 你的身体所感受到的气温？</h3>
+
+    <h4>
+      What's the temperature in your area?
+    </h4>
+    <spam class="date"> 2019-9-29</spam>
+
+    <div class="resonances">
+      <div class="res resonance10-1">
+        <div class="overlay10-1">
+          <p>
+            尚尚
+          </p>
+        </div>
+      </div>
+      <div class="res resonance10-2">
+        <div class="overlay10-2">
+          <p>
+            弓弓田
+          </p>
+        </div>
+      </div>
+      <div class="res resonance10-3">
+        <div class="overlay10-3">
+          <p>
+            640
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3>第九次 #9 你最近吃的一餐饭？</h3>
+    <h4>
+      What's the last meal you had?
+    </h4>
+    <spam class="date"> 2019-6-26</spam>
+
+    <div class="resonances">
+      <div class="res resonance9-1">
+        <div class="overlay9-1">
+          <p>
+            弓弓田
+          </p>
+        </div>
+      </div>
+      <div class="res resonance9-2">
+        <div class="overlay9-2">
+          <p>
+            640
+          </p>
+        </div>
+      </div>
+      <div class="res resonance9-3">
+        <div class="overlay9-3">
+          <p>
+            尚尚
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3>第八次 #8 你的口红色号是？</h3>
+    <h4>
+      What's the color of your lipstick?
+    </h4>
+
+    <spam class="date"> 2019-6-23</spam>
+    <div class="resonances">
+      <div class="res resonance8-1">
+        <div class="overlay8-1">
+          <p>
+            弓弓田
+          </p>
+        </div>
+      </div>
+      <div class="res resonance8-2">
+        <div class="overlay8-2">
+          <p>
+            尚尚
+          </p>
+        </div>
+      </div>
+      <div class="res resonance8-3">
+        <div class="overlay8-3">
+          <p>
+            640
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3>第七次 #7 请拍下你今天看到的一盏灯。</h3>
+    <h4>
+      Please take a picture of a lamp you see today.
+    </h4>
+
+    <spam class="date"> 2019-5-15</spam>
+
+    <div class="resonances">
+      <div class="res resonance7-1">
+        <div class="overlay7-1">
+          <p>
+            弓弓田
+          </p>
+        </div>
+      </div>
+      <div class="res resonance7-2">
+        <div class="overlay7-2">
+          <p>
+            尚尚
+          </p>
+        </div>
+      </div>
+      <div class="res resonance7-3">
+        <div class="overlay7-3">
+          <p>
+            640
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3>第六次 #6 你们都在这个地球上的什么位置？</h3>
+
+    <h4>
+      Where are you in this planet?
+    </h4>
+
+    <spam class="date"> 2019-5-4</spam>
+
+    <div class="resonances">
+      <div class="res resonance6-1">
+        <div class="overlay6-1">
+          <p>
+            640
+          </p>
+        </div>
+      </div>
+      <div class="res resonance6-2">
+        <div class="overlay6-2">
+          <p>
+            弓弓田
+          </p>
+        </div>
+      </div>
+      <div class="res resonance6-3">
+        <div class="overlay6-3">
+          <p>
+            尚尚
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3>第五次 #5 请分享今天看到之后心情立刻变好的一种颜色吧～</h3>
+
+    <h4>
+      Share a color that immediately brightened you today.
+    </h4>
+
+    <spam class="date"> 2019-5-1</spam>
+
+    <div class="resonances">
+      <div class="res resonance5-1">
+        <div class="overlay5-1">
+          <p>
+            弓弓田
+          </p>
+        </div>
+      </div>
+      <div class="res resonance5-2">
+        <div class="overlay5-2">
+          <p>
+            尚尚
+          </p>
+        </div>
+      </div>
+      <div class="res resonance5-3">
+        <div class="overlay5-3">
+          <p>
+            640
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3>第四次 #4 分享今天看到的一朵云。</h3>
+
+    <h4>
+      Share a cloud you saw today.
+    </h4>
+    <spam class="date"> 2019-4-30</spam>
+
+    <div class="resonances">
+      <div class="res resonance4-1">
+        <div class="overlay4-1">
+          <p>
+            弓弓田
+          </p>
+        </div>
+      </div>
+      <div class="res resonance4-2">
+        <div class="overlay4-2">
+          <p>
+            640
+          </p>
+        </div>
+      </div>
+      <div class="res resonance4-3">
+        <div class="overlay4-3">
+          <p>
+            尚尚
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3>第三次 #3 你喝水水杯长啥样？</h3>
+
+    <h4>
+      What's your water bottle look like?
+    </h4>
+    <spam class="date"> 2019-4-28</spam>
+
+    <div class="resonances">
+      <div class="res resonance3-1">
+        <div class="overlay3-1">
+          <p>
+            640
+          </p>
+        </div>
+      </div>
+      <div class="res resonance3-2">
+        <div class="overlay3-2">
+          <p>
+            弓弓田
+          </p>
+        </div>
+      </div>
+      <div class="res resonance3-3">
+        <div class="overlay3-3">
+          <p>
+            尚尚
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3>第二次 #2 你最近最爱的一首歌和其中一句歌词。</h3>
+
+    <h4>
+      Your latest favorite song and your favorite lyrics.
+    </h4>
+
+    <spam class="date"> 2019-4-27</spam>
+
+    <div class="resonances">
+      <div class="res resonance2-1">
+        <div class="overlay2-1">
+          <p>
+            弓弓田
+          </p>
+        </div>
+      </div>
+      <div class="res resonance2-2">
+        <div class="overlay2-2">
+          <p>
+            640
+          </p>
+        </div>
+      </div>
+      <div class="res resonance2-3">
+        <div class="overlay2-3">
+          <p>
+            尚尚
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3>第一次 #1 你的手机锁屏是什么？</h3>
+    <h4>
+      What's your photo of the lock screen?
+    </h4>
+
+    <spam class="date"> 2019-4-26</spam>
+
+    <div class="resonances">
+      <div class="res resonance1-1">
+        <div class="overlay1-1">
+          <p>
+            尚尚
+          </p>
+        </div>
+      </div>
+      <div class="res resonance1-2">
+        <div class="overlay1-2">
+          <p>
+            640
+          </p>
+        </div>
+      </div>
+      <div class="res resonance1-3">
+        <div class="overlay1-3">
+          <p>
+            弓弓田
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo">
+      <a href="http://boboradio2016.com">
+        <img
+          width="400"
+          src="https://cdn.glitch.com/aed6d2fa-78a4-49c8-9c2b-126e3caf00c4%2FLOGO.jpg?v=1569378707261"
+        />
+      </a>
+    </div>
+  </body>
+</html>
